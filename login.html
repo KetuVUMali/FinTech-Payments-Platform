@@ -1,8 +1,115 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Log in | FinTech Payments Platform</title><meta name="description" content="Modern payment infrastructure: accept payments, manage transactions, automate payouts and analyze revenue.">
-<meta property="og:title" content="FinTech Payments Platform"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in | FinTech Payments Platform</title>
+  <meta name="description" content="Sign in to your FinTech Payments Platform merchant dashboard to manage transactions, payouts, and analytics.">
+  <meta property="og:title" content="Sign in | FinTech Payments Platform">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="assets/js/loader.js"></script>
+  <script>
+    var t = localStorage.getItem('fintech-theme') || 'dark';
+    document.documentElement.dataset.theme = t;
+    document.documentElement.dataset.bsTheme = (t === 'light') ? 'light' : 'dark';
+  </script>
+</head>
+<body data-root="" data-layout="none" class="prism-bg-mesh d-flex flex-column min-vh-100 justify-content-center py-4">
+  <div class="prism-orb prism-orb-indigo" style="top: -100px; left: 10%;"></div>
+  <div class="prism-orb prism-orb-pink" style="bottom: -100px; right: 10%;"></div>
 
-<link href="assets/css/style.css" rel="stylesheet"><script src="assets/js/loader.js"></script>
-<script>var t=localStorage.getItem('fintech-theme')||'light';document.documentElement.dataset.theme=t;document.documentElement.dataset.bsTheme=t=='light'?'light':'dark'</script></head>
-<body data-root="" data-layout="none" ><main class="container d-flex align-items-center min-vh-100"><div class="row w-100 justify-content-center"><div class="col-md-6 col-lg-4"><a href="index.html" class="fw-bold text-decoration-none d-block mb-3"><i class="bi bi-shield-check"></i> FinTech Payments</a><div class="card"><div class="card-body p-4"><h1 class="h4 mb-3">Log in</h1><form class="needs-validation" novalidate data-next="dashboard/index.html"><div class="mb-3"><label class="form-label" for="e">Email</label><input id="e" type="email" class="form-control" required ><div class="invalid-feedback">Please enter a valid email.</div></div><div class="mb-3"><label class="form-label" for="p">Password</label><input id="p" type="password" class="form-control" required minlength=8><div class="invalid-feedback">Please enter a valid password.</div></div><button class="btn btn-primary w-100">Login</button></form><p class="small text-muted mt-3 mb-0">No account? <a href="signup.html">Create one</a>. Demo: any valid email and 8+ char password.</p></div></div></div></div></main>
-<script src="assets/js/app.js"></script></body></html>
+  <main class="container my-auto position-relative" style="z-index: 1;">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-xl-9">
+        <div class="glass-prism-panel overflow-hidden">
+          <div class="row g-0">
+            <!-- Left: Login Form -->
+            <div class="col-md-6 p-4 p-lg-5">
+              <a href="index.html" class="d-inline-flex align-items-center gap-2 fw-bold text-decoration-none mb-4">
+                <span class="feature-icon-prism" style="width:34px;height:34px;font-size:1rem;border-radius:8px;"><i class="bi bi-shield-check"></i></span>
+                <span class="text-body fs-5">FinTech<span class="prism-text-gradient">Payments</span></span>
+              </a>
+
+              <h1 class="h3 fw-bold mb-1">Welcome back</h1>
+              <p class="text-muted small mb-4">Sign in to your merchant operations cockpit</p>
+
+              <form class="needs-validation" novalidate data-next="dashboard/index.html">
+                <div class="mb-3">
+                  <label class="form-label small fw-semibold" for="email">Work Email</label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-transparent border-end-0 text-muted"><i class="bi bi-envelope"></i></span>
+                    <input id="email" type="email" class="form-control border-start-0" placeholder="name@company.com" required value="ketan.mali@fintech.io">
+                  </div>
+                  <div class="invalid-feedback">Please enter a valid work email.</div>
+                </div>
+
+                <div class="mb-3">
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <label class="form-label small fw-semibold mb-0" for="password">Password</label>
+                    <a href="#" class="small text-decoration-none" onclick="showToast('Password reset link sent to demo email', 'info'); return false;">Forgot?</a>
+                  </div>
+                  <div class="input-group">
+                    <span class="input-group-text bg-transparent border-end-0 text-muted"><i class="bi bi-lock"></i></span>
+                    <input id="password" type="password" class="form-control border-start-0" required minlength="8" value="password123">
+                  </div>
+                  <div class="invalid-feedback">Password must be at least 8 characters.</div>
+                </div>
+
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="checkbox" id="remember" checked>
+                  <label class="form-check-label small text-muted" for="remember">Remember this device for 30 days</label>
+                </div>
+
+                <button class="btn prism-btn-primary w-100 py-2.5 mb-3" type="submit">
+                  <i class="bi bi-box-arrow-in-right me-2"></i> Sign In to Dashboard
+                </button>
+
+                <button class="btn btn-outline-secondary w-100 py-2 small d-flex align-items-center justify-content-center gap-2" type="button" onclick="showToast('SSO authenticating with Okta...', 'info'); setTimeout(()=>location.href='dashboard/index.html', 800)">
+                  <i class="bi bi-fingerprint"></i> Single Sign-On (SSO / SAML)
+                </button>
+              </form>
+
+              <p class="small text-muted text-center mt-4 mb-0">
+                Don't have a merchant account? <a href="signup.html" class="fw-semibold text-primary">Create one</a>
+              </p>
+            </div>
+
+            <!-- Right: FinTech Visual Showcase -->
+            <div class="col-md-6 d-none d-md-flex flex-column justify-content-between p-5 text-white position-relative" style="background: linear-gradient(135deg, rgba(37,99,235,0.85) 0%, rgba(79,70,229,0.85) 50%, rgba(124,58,237,0.85) 100%);">
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="prism-badge bg-white bg-opacity-25 text-white border-0"><span class="pulse-dot"></span> LIVE ENVIRONMENT</span>
+                <span class="small opacity-75">v3.2.0</span>
+              </div>
+
+              <div class="my-auto py-4">
+                <div class="glass-prism-card p-3 mb-3 bg-white bg-opacity-10 text-white border-white border-opacity-25">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="small opacity-75">Live Settlements</span>
+                    <span class="badge bg-success text-white">Active</span>
+                  </div>
+                  <div class="fs-4 fw-bold">₹48,52,320</div>
+                  <small class="opacity-75">T+1 automated bank disbursals</small>
+                </div>
+                <h4 class="h5 fw-bold mb-2">Enterprise-grade financial operations</h4>
+                <p class="small opacity-90 mb-0">
+                  Accept payments globally, orchestrate automated vendor payouts, and monitor transaction telemetry in real time.
+                </p>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center small opacity-75 border-top border-white border-opacity-25 pt-3">
+                <span><i class="bi bi-shield-check me-1"></i> PCI-DSS Level 1</span>
+                <span><i class="bi bi-lock me-1"></i> 256-bit AES</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

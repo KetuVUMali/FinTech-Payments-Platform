@@ -1,8 +1,193 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Pricing | FinTech Payments Platform</title><meta name="description" content="Modern payment infrastructure: accept payments, manage transactions, automate payouts and analyze revenue.">
-<meta property="og:title" content="FinTech Payments Platform"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Transparent Pricing Plans | FinTech Payments Platform</title>
+  <meta name="description" content="Simple, transparent payment processing rates. No setup fees, no monthly maintenance charges. Pay only for successful transactions.">
+  <meta property="og:title" content="Transparent Pricing | FinTech Payments Platform">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="assets/js/loader.js"></script>
+  <script>
+    var t = localStorage.getItem('fintech-theme') || 'dark';
+    document.documentElement.dataset.theme = t;
+    document.documentElement.dataset.bsTheme = (t === 'light') ? 'light' : 'dark';
+  </script>
+</head>
+<body data-root="" data-layout="public" class="prism-bg-mesh">
+  <!-- Dynamic Public Navbar & Announcement Bar -->
+  <div id="nav"></div>
 
-<link href="assets/css/style.css" rel="stylesheet"><script src="assets/js/loader.js"></script>
-<script>var t=localStorage.getItem('fintech-theme')||'light';document.documentElement.dataset.theme=t;document.documentElement.dataset.bsTheme=t=='light'?'light':'dark'</script></head>
-<body data-root="" data-layout="public" ><div id="nav"></div><main class="container py-5"><h1 class="text-center mb-4">Pricing for every stage</h1><div class="row g-3"><div class="col-md-4" data-aos="fade-up"><div class="card h-100"><div class="card-body"><h2 class="h5">Starter</h2><div class="fs-3 fw-bold my-2">2% per txn</div><p class="text-muted small">For small businesses</p><ul class="list-unstyled small"><li class=mb-1><i class='bi bi-check2 text-success'></i> Cards, UPI, wallets</li><li class=mb-1><i class='bi bi-check2 text-success'></i> Basic analytics</li><li class=mb-1><i class='bi bi-check2 text-success'></i> API access</li><li class=mb-1><i class='bi bi-check2 text-success'></i> 2 team members</li><li class=mb-1><i class='bi bi-check2 text-success'></i> Email support</li></ul><a class="btn btn-primary w-100" href="signup.html">Get Started</a></div></div></div><div class="col-md-4" data-aos="fade-up"><div class="card h-100"><div class="card-body"><h2 class="h5">Growth</h2><div class="fs-3 fw-bold my-2">1.7% per txn</div><p class="text-muted small">For growing businesses</p><ul class="list-unstyled small"><li class=mb-1><i class='bi bi-check2 text-success'></i> All payment methods</li><li class=mb-1><i class='bi bi-check2 text-success'></i> Advanced analytics</li><li class=mb-1><i class='bi bi-check2 text-success'></i> Fraud protection</li><li class=mb-1><i class='bi bi-check2 text-success'></i> 10 team members</li><li class=mb-1><i class='bi bi-check2 text-success'></i> Priority support</li></ul><a class="btn btn-primary w-100" href="signup.html">Get Started</a></div></div></div><div class="col-md-4" data-aos="fade-up"><div class="card h-100"><div class="card-body"><h2 class="h5">Enterprise</h2><div class="fs-3 fw-bold my-2">Custom</div><p class="text-muted small">For large organizations</p><ul class="list-unstyled small"><li class=mb-1><i class='bi bi-check2 text-success'></i> Custom limits</li><li class=mb-1><i class='bi bi-check2 text-success'></i> Dedicated manager</li><li class=mb-1><i class='bi bi-check2 text-success'></i> SSO & audit logs</li><li class=mb-1><i class='bi bi-check2 text-success'></i> Unlimited members</li><li class=mb-1><i class='bi bi-check2 text-success'></i> 24/7 support</li></ul><a class="btn btn-primary w-100" href="signup.html">Contact Sales</a></div></div></div></div></main><div id="foot"></div>
-<script src="assets/js/app.js"></script></body></html>
+  <main class="container py-5">
+    <div class="text-center max-w-700 mx-auto mb-5" data-aos="fade-up">
+      <div class="prism-badge mb-2">TRANSPARENT VALUE</div>
+      <h1 class="display-5 fw-bold mb-3">Simple pricing for businesses at every stage</h1>
+      <p class="text-muted fs-5">
+        No setup fees. No hidden annual maintenance charges. Pay only for successful transactions.
+      </p>
+    </div>
+
+    <!-- Pricing Cards Grid -->
+    <div class="row g-4 mb-5">
+      <!-- Plan 1: Starter -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="glass-prism-card h-100 p-4 p-lg-5 d-flex flex-column">
+          <div class="mb-4">
+            <h2 class="h4 fw-bold mb-1">Starter</h2>
+            <p class="text-muted small">For emerging startups & small businesses</p>
+            <div class="d-flex align-items-baseline gap-1 my-3">
+              <span class="display-6 fw-bold">2.0%</span>
+              <span class="text-muted small">/ successful txn</span>
+            </div>
+            <div class="badge bg-secondary-subtle text-muted rounded-pill px-2.5 py-1 small">Zero Monthly Fee</div>
+          </div>
+
+          <ul class="list-unstyled small d-flex flex-column gap-2 mb-4 flex-grow-1">
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Credit/Debit Cards, UPI 2.0 & Net Banking</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Unlimited shareable Payment Links</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Standard T+1 bank settlement</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Basic analytics dashboard</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Up to 2 team members</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Standard email support</li>
+          </ul>
+
+          <a class="btn prism-btn-glass w-100 py-2.5 fw-semibold" href="signup.html">Get Started Free</a>
+        </div>
+      </div>
+
+      <!-- Plan 2: Growth (Featured) -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="glass-prism-card h-100 p-4 p-lg-5 d-flex flex-column position-relative border-primary" style="box-shadow: 0 20px 45px -10px var(--prism-glow);">
+          <div class="position-absolute top-0 end-0 m-3">
+            <span class="badge prism-btn-primary px-3 py-1 rounded-pill small">MOST POPULAR</span>
+          </div>
+
+          <div class="mb-4">
+            <h2 class="h4 fw-bold mb-1">Growth</h2>
+            <p class="text-muted small">For fast-scaling e-commerce & SaaS platforms</p>
+            <div class="d-flex align-items-baseline gap-1 my-3">
+              <span class="display-6 fw-bold text-primary">1.7%</span>
+              <span class="text-muted small">/ successful txn</span>
+            </div>
+            <div class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill px-2.5 py-1 small">Volume Discounts Apply</div>
+          </div>
+
+          <ul class="list-unstyled small d-flex flex-column gap-2 mb-4 flex-grow-1">
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> All payment rails & 135+ international currencies</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Automated Instant Payouts engine</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> AI Fraud Shield with custom risk rules</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Advanced recurring subscription billing</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Real-time telemetry & CSV export</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Up to 15 team members with RBAC</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Priority chat & email support</li>
+          </ul>
+
+          <a class="btn prism-btn-primary w-100 py-2.5 fw-semibold" href="signup.html">Start Growth Trial</a>
+        </div>
+      </div>
+
+      <!-- Plan 3: Enterprise -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="glass-prism-card h-100 p-4 p-lg-5 d-flex flex-column">
+          <div class="mb-4">
+            <h2 class="h4 fw-bold mb-1">Enterprise</h2>
+            <p class="text-muted small">For large organizations with complex operations</p>
+            <div class="d-flex align-items-baseline gap-1 my-3">
+              <span class="display-6 fw-bold">Custom</span>
+              <span class="text-muted small">volume pricing</span>
+            </div>
+            <div class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-2.5 py-1 small">Dedicated Infrastructure</div>
+          </div>
+
+          <ul class="list-unstyled small d-flex flex-column gap-2 mb-4 flex-grow-1">
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Tailored interchange-plus pricing</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Sub-second instant real-time bank settlements</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Dedicated Technical Account Manager</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> 99.999% SLA uptime contract</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Custom webhook listeners & ERP integrations</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Unlimited team seats & SAML SSO</li>
+            <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> 24/7 dedicated phone & emergency support</li>
+          </ul>
+
+          <a class="btn prism-btn-glass w-100 py-2.5 fw-semibold" href="signup.html">Contact Sales Team</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature Matrix Comparison Table -->
+    <div class="glass-prism-panel p-4 p-lg-5" data-aos="fade-up">
+      <h3 class="h4 fw-bold mb-4 text-center">Detailed Feature Comparison</h3>
+      <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+          <thead>
+            <tr>
+              <th style="width: 40%;">Feature</th>
+              <th class="text-center" style="width: 20%;">Starter</th>
+              <th class="text-center text-primary" style="width: 20%;">Growth</th>
+              <th class="text-center" style="width: 20%;">Enterprise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fw-semibold">Payment Channels (Cards, UPI, NetBanking)</td>
+              <td class="text-center"><i class="bi bi-check-circle text-success"></i></td>
+              <td class="text-center"><i class="bi bi-check-circle text-success"></i></td>
+              <td class="text-center"><i class="bi bi-check-circle text-success"></i></td>
+            </tr>
+            <tr>
+              <td class="fw-semibold">International Cards & Forex (135+ Currencies)</td>
+              <td class="text-center text-muted">—</td>
+              <td class="text-center"><i class="bi bi-check-circle text-success"></i></td>
+              <td class="text-center"><i class="bi bi-check-circle text-success"></i></td>
+            </tr>
+            <tr>
+              <td class="fw-semibold">Settlement Velocity</td>
+              <td class="text-center">T+1 Standard</td>
+              <td class="text-center">Same-Day / T+0</td>
+              <td class="text-center text-success fw-bold">Instant Real-time</td>
+            </tr>
+            <tr>
+              <td class="fw-semibold">AI Fraud Shield & Risk Scoring</td>
+              <td class="text-center">Basic Filters</td>
+              <td class="text-center">Adaptive ML Models</td>
+              <td class="text-center text-primary fw-bold">Custom ML Rules & Defense</td>
+            </tr>
+            <tr>
+              <td class="fw-semibold">Autonomous Vendor Payouts API</td>
+              <td class="text-center text-muted">—</td>
+              <td class="text-center"><i class="bi bi-check-circle text-success"></i></td>
+              <td class="text-center"><i class="bi bi-check-circle text-success"></i></td>
+            </tr>
+            <tr>
+              <td class="fw-semibold">Recurring Subscription Billing & Dunning</td>
+              <td class="text-center text-muted">—</td>
+              <td class="text-center"><i class="bi bi-check-circle text-success"></i></td>
+              <td class="text-center"><i class="bi bi-check-circle text-success"></i></td>
+            </tr>
+            <tr>
+              <td class="fw-semibold">Team Roles & Role-Based Access Control (RBAC)</td>
+              <td class="text-center">2 Members</td>
+              <td class="text-center">15 Members</td>
+              <td class="text-center text-success fw-bold">Unlimited + SAML SSO</td>
+            </tr>
+            <tr>
+              <td class="fw-semibold">Customer Support</td>
+              <td class="text-center">Email (24h)</td>
+              <td class="text-center">Priority Chat & Email</td>
+              <td class="text-center text-primary fw-bold">Dedicated Account Manager (24/7)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- Dynamic Public Footer -->
+  <div id="foot"></div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

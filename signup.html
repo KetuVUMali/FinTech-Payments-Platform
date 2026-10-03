@@ -1,8 +1,145 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Create account | FinTech Payments Platform</title><meta name="description" content="Modern payment infrastructure: accept payments, manage transactions, automate payouts and analyze revenue.">
-<meta property="og:title" content="FinTech Payments Platform"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create Merchant Account | FinTech Payments Platform</title>
+  <meta name="description" content="Open a FinTech Payments merchant account in minutes. Accept payments, automate payouts, and access real-time financial telemetry.">
+  <meta property="og:title" content="Create Account | FinTech Payments Platform">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="assets/js/loader.js"></script>
+  <script>
+    var t = localStorage.getItem('fintech-theme') || 'dark';
+    document.documentElement.dataset.theme = t;
+    document.documentElement.dataset.bsTheme = (t === 'light') ? 'light' : 'dark';
+  </script>
+</head>
+<body data-root="" data-layout="none" class="prism-bg-mesh d-flex flex-column min-vh-100 justify-content-center py-4">
+  <div class="prism-orb prism-orb-indigo" style="top: -120px; right: 10%;"></div>
+  <div class="prism-orb prism-orb-cyan" style="bottom: -100px; left: 10%;"></div>
 
-<link href="assets/css/style.css" rel="stylesheet"><script src="assets/js/loader.js"></script>
-<script>var t=localStorage.getItem('fintech-theme')||'light';document.documentElement.dataset.theme=t;document.documentElement.dataset.bsTheme=t=='light'?'light':'dark'</script></head>
-<body data-root="" data-layout="none" ><main class="container d-flex align-items-center min-vh-100"><div class="row w-100 justify-content-center"><div class="col-md-6 col-lg-4"><a href="index.html" class="fw-bold text-decoration-none d-block mb-3"><i class="bi bi-shield-check"></i> FinTech Payments</a><div class="card"><div class="card-body p-4"><h1 class="h4 mb-3">Create account</h1><form class="needs-validation" novalidate data-next="dashboard/index.html"><div class="mb-3"><label class="form-label" for="n">Full name</label><input id="n" type="text" class="form-control" required ><div class="invalid-feedback">Please enter a valid full name.</div></div><div class="mb-3"><label class="form-label" for="e">Work email</label><input id="e" type="email" class="form-control" required ><div class="invalid-feedback">Please enter a valid work email.</div></div><div class="mb-3"><label class="form-label" for="c">Company</label><input id="c" type="text" class="form-control" required ><div class="invalid-feedback">Please enter a valid company.</div></div><div class="mb-3"><label class="form-label" for="p">Password</label><input id="p" type="password" class="form-control" required minlength=8><div class="invalid-feedback">Please enter a valid password.</div></div><button class="btn btn-primary w-100">Create Account</button></form><p class="small text-muted mt-3 mb-0">Have an account? <a href="login.html">Log in</a></p></div></div></div></div></main>
-<script src="assets/js/app.js"></script></body></html>
+  <main class="container my-auto position-relative" style="z-index: 1;">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-xl-9">
+        <div class="glass-prism-panel overflow-hidden">
+          <div class="row g-0">
+            <!-- Left: Sign Up Form -->
+            <div class="col-md-6 p-4 p-lg-5">
+              <a href="index.html" class="d-inline-flex align-items-center gap-2 fw-bold text-decoration-none mb-4">
+                <span class="feature-icon-prism" style="width:34px;height:34px;font-size:1rem;border-radius:8px;"><i class="bi bi-shield-check"></i></span>
+                <span class="text-body fs-5">FinTech<span class="prism-text-gradient">Payments</span></span>
+              </a>
+
+              <h1 class="h3 fw-bold mb-1">Create merchant account</h1>
+              <p class="text-muted small mb-4">Start accepting payments and automated payouts in minutes</p>
+
+              <form class="needs-validation" novalidate data-next="dashboard/index.html">
+                <div class="row g-2 mb-3">
+                  <div class="col-sm-6">
+                    <label class="form-label small fw-semibold" for="fullName">Full Name</label>
+                    <input id="fullName" type="text" class="form-control" placeholder="Ketan Mali" required>
+                    <div class="invalid-feedback">Full name is required.</div>
+                  </div>
+                  <div class="col-sm-6">
+                    <label class="form-label small fw-semibold" for="workEmail">Work Email</label>
+                    <input id="workEmail" type="email" class="form-control" placeholder="ketan@company.com" required>
+                    <div class="invalid-feedback">Valid work email required.</div>
+                  </div>
+                </div>
+
+                <div class="row g-2 mb-3">
+                  <div class="col-sm-6">
+                    <label class="form-label small fw-semibold" for="companyName">Company Name</label>
+                    <input id="companyName" type="text" class="form-control" placeholder="Acme Technologies" required>
+                    <div class="invalid-feedback">Company name is required.</div>
+                  </div>
+                  <div class="col-sm-6">
+                    <label class="form-label small fw-semibold" for="phoneNum">Phone Number</label>
+                    <input id="phoneNum" type="tel" class="form-control" placeholder="+91 98765 43210" required>
+                    <div class="invalid-feedback">Phone number is required.</div>
+                  </div>
+                </div>
+
+                <div class="row g-2 mb-3">
+                  <div class="col-sm-6">
+                    <label class="form-label small fw-semibold" for="bizType">Business Type</label>
+                    <select id="bizType" class="form-select" required>
+                      <option value="">Select entity...</option>
+                      <option value="pvt">Private Limited</option>
+                      <option value="llp">LLP / Partnership</option>
+                      <option value="prop">Sole Proprietorship</option>
+                      <option value="ind">Individual / Freelancer</option>
+                    </select>
+                    <div class="invalid-feedback">Please select entity type.</div>
+                  </div>
+                  <div class="col-sm-6">
+                    <label class="form-label small fw-semibold" for="password">Create Password</label>
+                    <input id="password" type="password" class="form-control" placeholder="8+ characters" required minlength="8">
+                    <div class="invalid-feedback">At least 8 characters.</div>
+                  </div>
+                </div>
+
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="checkbox" id="terms" required checked>
+                  <label class="form-check-label small text-muted" for="terms">
+                    I agree to the <a href="pricing.html" class="text-decoration-none">Terms of Service</a> & <a href="pricing.html" class="text-decoration-none">Privacy Policy</a>
+                  </label>
+                  <div class="invalid-feedback">You must agree before registering.</div>
+                </div>
+
+                <button class="btn prism-btn-primary w-100 py-2.5 mb-3" type="submit">
+                  <i class="bi bi-person-check-fill me-2"></i> Create Free Account
+                </button>
+              </form>
+
+              <p class="small text-muted text-center mt-3 mb-0">
+                Already have an account? <a href="login.html" class="fw-semibold text-primary">Log in</a>
+              </p>
+            </div>
+
+            <!-- Right: FinTech Onboarding Highlights -->
+            <div class="col-md-6 d-none d-md-flex flex-column justify-content-between p-5 text-white position-relative" style="background: linear-gradient(135deg, rgba(79,70,229,0.9) 0%, rgba(37,99,235,0.9) 50%, rgba(6,182,212,0.85) 100%);">
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="prism-badge bg-white bg-opacity-25 text-white border-0"><span class="pulse-dot"></span> INSTANT SANDBOX</span>
+                <span class="small opacity-75">No Card Required</span>
+              </div>
+
+              <div class="my-auto py-4">
+                <h4 class="h5 fw-bold mb-3">Scale your payment velocity with zero friction</h4>
+                <div class="d-flex flex-column gap-3">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle-fill text-warning fs-5"></i>
+                    <span class="small">Instant test API keys in your sandbox cockpit</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle-fill text-warning fs-5"></i>
+                    <span class="small">Accept RuPay, Visa, Mastercard & UPI 2.0</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle-fill text-warning fs-5"></i>
+                    <span class="small">Automated next-day T+1 bank settlements</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle-fill text-warning fs-5"></i>
+                    <span class="small">Machine-learning fraud defense included free</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center small opacity-75 border-top border-white border-opacity-25 pt-3">
+                <span><i class="bi bi-shield-check me-1"></i> Bank-grade encryption</span>
+                <span><i class="bi bi-clock me-1"></i> 24h digital KYC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,2989 @@
+# MASTER UI DEVELOPMENT PROMPT
+
+## FinTech Payments Platform — Complete Website + Admin Dashboard + Payment Management System
+
+Act as a **Senior UI Developer, Professional Frontend Engineer, UI/UX Designer, Design System Architect, FinTech Product Designer, and experienced production-level web developer**.
+
+You have extensive experience building:
+
+* FinTech platforms
+* Payment gateways
+* Banking dashboards
+* Payment management systems
+* SaaS applications
+* Admin dashboards
+* Merchant portals
+* Customer portals
+* Financial analytics dashboards
+* Responsive enterprise applications
+* Production-ready web interfaces
+
+Your task is to design and develop a **complete professional FinTech Payments Platform** named:
+
+# "FinTech Payments Platform"
+
+The final result must look like a **real-world production FinTech SaaS product**, not a basic demo, template, college project, or AI-generated website.
+
+The UI should feel comparable to a modern combination of:
+
+* Payment gateway platform
+* Merchant payment dashboard
+* Banking SaaS
+* FinTech administration system
+* Payment analytics platform
+* Business finance platform
+* Developer payment API platform
+
+---
+
+# 1. PRIMARY OBJECTIVE
+
+Create a complete responsive FinTech Payments Platform containing:
+
+1. Professional public-facing marketing website
+2. Authentication screens
+3. Merchant dashboard
+4. Admin dashboard
+5. Payment management
+6. Transaction management
+7. Customers management
+8. Merchants management
+9. Settlements
+10. Payouts
+11. Refunds
+12. Disputes
+13. Payment links
+14. Invoices
+15. Subscriptions
+16. Payment methods
+17. Cards
+18. Bank accounts
+19. UPI
+20. Wallets
+21. Reports
+22. Analytics
+23. Fraud/risk management
+24. API/developer portal
+25. Webhooks
+26. API keys
+27. Notifications
+28. Support/help center
+29. User profile
+30. Organization settings
+31. Security settings
+32. Billing
+33. Team management
+34. Audit logs
+35. System administration
+36. Multi-theme support
+
+The application should feel like a **complete commercial FinTech product**.
+
+---
+
+# 2. TECHNOLOGY REQUIREMENTS
+
+Use:
+
+* HTML5
+* CSS3
+* JavaScript ES6+
+* Bootstrap 5
+* Bootstrap Icons
+* AOS (Animate On Scroll)
+* Optional GSAP where useful
+* Chart.js for charts
+* Google Fonts or another professional web font
+* CSS Variables
+* LocalStorage for demo state/theme persistence
+* Vanilla JavaScript architecture
+
+IMPORTANT:
+
+Prefer **Bootstrap utilities and components** wherever practical.
+
+Do not unnecessarily create complicated custom CSS when Bootstrap can handle the requirement.
+
+However, custom CSS is expected for:
+
+* FinTech visual identity
+* advanced dashboard layouts
+* custom cards
+* charts
+* sidebar
+* theme system
+* animations
+* data tables
+* responsive behavior
+* special components
+* visual polish
+
+Do NOT use React, Angular, Vue, Next.js, or another framework unless explicitly requested.
+
+The project should work directly in a browser.
+
+---
+
+# 3. DEVELOPMENT PHILOSOPHY
+
+The UI must follow these principles:
+
+* Professional
+* Clean
+* Modern
+* Enterprise-grade
+* FinTech-oriented
+* Data-driven
+* Trustworthy
+* Premium
+* Responsive
+* Accessible
+* Consistent
+* Scalable
+* Maintainable
+* Production-inspired
+
+Avoid:
+
+* excessive gradients
+* excessive glassmorphism
+* childish colors
+* oversized typography
+* random animations
+* unnecessary decorative elements
+* template-like layouts
+* generic AI-looking cards
+* inconsistent spacing
+* inconsistent border radius
+* poor mobile layouts
+* fake-looking financial data
+* excessive shadows
+
+The interface should communicate:
+
+**Security + Trust + Financial Intelligence + Speed + Professionalism**
+
+---
+
+# 4. BRAND DIRECTION
+
+Brand:
+
+**FinTech Payments Platform**
+
+Create a professional visual identity.
+
+Suggested visual language:
+
+Primary:
+
+* Deep Navy
+* Professional Blue
+* Indigo
+* White
+* Neutral Gray
+
+Supporting:
+
+* Success Green
+* Warning Amber
+* Error Red
+* Information Cyan
+
+Use CSS variables so colors can be changed globally.
+
+Example structure:
+
+```css
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #4f46e5;
+    --success-color: #16a34a;
+    --warning-color: #f59e0b;
+    --danger-color: #dc2626;
+    --info-color: #0891b2;
+
+    --bg-color: #f8fafc;
+    --surface-color: #ffffff;
+    --text-color: #0f172a;
+    --muted-color: #64748b;
+    --border-color: #e2e8f0;
+}
+```
+
+Do not blindly copy these exact values.
+
+Create a polished professional palette.
+
+---
+
+# 5. MULTI-THEME SYSTEM
+
+Implement a complete theme system.
+
+At minimum provide:
+
+### Theme 1 — Light
+
+Clean enterprise FinTech interface.
+
+### Theme 2 — Dark
+
+Professional dark dashboard.
+
+### Theme 3 — Midnight
+
+Deep navy premium financial interface.
+
+### Theme 4 — High Contrast
+
+Accessibility-focused theme.
+
+Optionally provide:
+
+### Theme 5 — Soft Light
+
+Modern SaaS appearance.
+
+Theme switching must update:
+
+* background
+* cards
+* sidebar
+* navbar
+* typography
+* borders
+* charts
+* buttons
+* tables
+* dropdowns
+* modals
+* forms
+
+Store selected theme in:
+
+```javascript
+localStorage
+```
+
+When the user reloads the page, their selected theme must remain active.
+
+---
+
+# 6. GLOBAL DESIGN SYSTEM
+
+Create a consistent design system.
+
+Define:
+
+### Typography
+
+Use:
+
+* Inter
+* Plus Jakarta Sans
+* or another modern professional font
+
+Typography hierarchy:
+
+* Display
+* H1
+* H2
+* H3
+* H4
+* H5
+* Body
+* Small
+* Caption
+
+---
+
+# 7. SPACING SYSTEM
+
+Maintain consistent spacing.
+
+Use Bootstrap spacing utilities whenever possible.
+
+Example:
+
+```text
+4px
+8px
+12px
+16px
+20px
+24px
+32px
+40px
+48px
+64px
+80px
+```
+
+Avoid random margins/padding.
+
+---
+
+# 8. BORDER RADIUS
+
+Create a consistent radius system:
+
+* Small controls: 6px
+* Inputs: 8px
+* Cards: 12px
+* Large containers: 16px
+* Pills: 999px
+
+Avoid excessive rounded UI.
+
+---
+
+# 9. SHADOW SYSTEM
+
+Use subtle professional shadows.
+
+Example:
+
+```text
+shadow-sm
+shadow-card
+shadow-dropdown
+shadow-modal
+```
+
+Cards should not look heavily elevated.
+
+---
+
+# 10. PUBLIC WEBSITE
+
+Create a complete public-facing website.
+
+Pages:
+
+```text
+/
+ /about
+ /products
+ /payments
+ /payment-gateway
+ /payouts
+ /payment-links
+ /subscriptions
+ /invoices
+ /fraud-prevention
+ /analytics
+ /developers
+ /pricing
+ /solutions
+ /solutions/startups
+ /solutions/ecommerce
+ /solutions/enterprise
+ /resources
+ /blog
+ /blog/article
+ /documentation
+ /contact
+ /support
+ /faq
+ /security
+ /privacy
+ /terms
+ /status
+```
+
+---
+
+# 11. HOMEPAGE
+
+Create an exceptional homepage.
+
+Structure:
+
+### Top Announcement Bar
+
+Example:
+
+"Powering smarter payments for modern businesses"
+
+Include:
+
+* announcement
+* CTA
+* close button
+
+---
+
+### Navbar
+
+Logo:
+
+**FinTech Payments**
+
+Navigation:
+
+* Products
+* Solutions
+* Developers
+* Resources
+* Pricing
+
+Right:
+
+* Login
+* Contact Sales
+* Get Started
+
+Navbar must become sticky on scroll.
+
+Mobile:
+
+* hamburger
+* slide/dropdown navigation
+
+---
+
+# 12. HERO SECTION
+
+Create a strong FinTech hero.
+
+Left:
+
+Headline:
+
+"Payments infrastructure built for modern businesses."
+
+Supporting text explaining:
+
+* accept payments
+* manage transactions
+* automate payouts
+* reduce payment friction
+* analyze revenue
+
+CTA:
+
+* Start Building
+* Contact Sales
+
+Secondary:
+
+* View Documentation
+
+Right:
+
+Create a realistic dashboard/payment visualization.
+
+Include:
+
+* revenue card
+* transaction chart
+* payment status
+* recent transaction
+* payment success indicator
+* mini analytics cards
+
+Do not make it look like a random floating UI.
+
+---
+
+# 13. TRUST SECTION
+
+Include:
+
+"Trusted by modern businesses"
+
+Show fictional but professional company logos.
+
+Do not use real company trademarks unnecessarily.
+
+Example:
+
+* NovaPay
+* Orbit Commerce
+* Finova
+* CloudCart
+* Vertex
+* Nexa
+
+---
+
+# 14. PRODUCT FEATURES
+
+Create cards for:
+
+### Payments
+
+Accept payments across multiple channels.
+
+### Payouts
+
+Send funds to customers, vendors, and employees.
+
+### Payment Links
+
+Create shareable payment links.
+
+### Invoices
+
+Create and track invoices.
+
+### Subscriptions
+
+Manage recurring payments.
+
+### Fraud Prevention
+
+Monitor suspicious transactions.
+
+### Analytics
+
+Understand revenue and payment performance.
+
+### Developer APIs
+
+Build custom payment experiences.
+
+---
+
+# 15. PAYMENT METHODS SECTION
+
+Show:
+
+* Cards
+* Credit Cards
+* Debit Cards
+* UPI
+* Net Banking
+* Bank Transfer
+* Wallets
+* QR Payments
+* International Payments
+
+Create professional payment method cards.
+
+---
+
+# 16. ANALYTICS SECTION
+
+Create a large dashboard preview.
+
+Show:
+
+* Total Revenue
+* Successful Payments
+* Failed Payments
+* Refunds
+* Average Transaction
+* Success Rate
+
+Chart:
+
+Revenue over time.
+
+Filters:
+
+* Today
+* 7 Days
+* 30 Days
+* 90 Days
+* 1 Year
+
+---
+
+# 17. SECURITY SECTION
+
+Create a security-focused section.
+
+Features:
+
+* Encryption
+* Secure APIs
+* Role-based access
+* Fraud monitoring
+* Activity logs
+* Authentication
+* Transaction monitoring
+* Secure payment processing
+
+Use professional security icons.
+
+---
+
+# 18. DEVELOPER SECTION
+
+Create:
+
+"Build payments into your product"
+
+Show code snippets.
+
+Example:
+
+```javascript
+const payment = await fintech.payments.create({
+    amount: 5000,
+    currency: "INR",
+    customer: "customer_123"
+});
+```
+
+Include:
+
+* API documentation
+* SDKs
+* Webhooks
+* API keys
+* Testing environment
+
+CTA:
+
+"Explore Documentation"
+
+---
+
+# 19. PRICING PAGE
+
+Create professional pricing.
+
+Plans:
+
+### Starter
+
+For small businesses.
+
+### Growth
+
+For growing businesses.
+
+### Enterprise
+
+For large organizations.
+
+Include:
+
+* transaction limits
+* payment methods
+* analytics
+* API access
+* support
+* team members
+* fraud protection
+
+Do not use unrealistic pricing unless necessary.
+
+Use:
+
+"Contact Sales"
+
+where appropriate.
+
+---
+
+# 20. LOGIN PAGE
+
+Create professional authentication.
+
+Login:
+
+* Email
+* Password
+* Remember me
+* Forgot password
+* Login
+* Google/SSO optional
+
+Add:
+
+"Don't have an account? Create one."
+
+Right-side visual:
+
+FinTech illustration/dashboard preview.
+
+---
+
+# 21. SIGNUP PAGE
+
+Fields:
+
+* Full Name
+* Work Email
+* Phone
+* Company
+* Password
+* Country
+* Business Type
+
+Checkbox:
+
+"I agree to the Terms and Privacy Policy."
+
+CTA:
+
+"Create Account"
+
+---
+
+# 22. FORGOT PASSWORD
+
+Create:
+
+* Email
+* Send Reset Link
+* Back to Login
+
+---
+
+# 23. OTP VERIFICATION
+
+Create professional OTP interface.
+
+6-digit OTP.
+
+Features:
+
+* resend timer
+* change email
+* verification status
+* error state
+* success state
+
+---
+
+# 24. DASHBOARD APPLICATION
+
+Create a separate professional authenticated application.
+
+Main structure:
+
+```text
+Sidebar
+    Logo
+    Workspace selector
+
+    Overview
+    Payments
+    Transactions
+    Customers
+    Payment Links
+    Invoices
+    Subscriptions
+    Payouts
+    Settlements
+    Refunds
+    Disputes
+
+    Analytics
+    Reports
+
+    Developers
+    API Keys
+    Webhooks
+
+    Risk & Fraud
+
+    Team
+    Settings
+
+    Help & Support
+
+Bottom:
+    Profile
+    Theme
+    Logout
+```
+
+---
+
+# 25. DASHBOARD TOP NAVBAR
+
+Include:
+
+Left:
+
+* sidebar toggle
+* breadcrumb
+* page title
+
+Right:
+
+* search
+* notifications
+* help
+* theme switcher
+* profile dropdown
+
+Profile dropdown:
+
+* Profile
+* Organization
+* Settings
+* Security
+* Logout
+
+---
+
+# 26. MAIN DASHBOARD OVERVIEW
+
+Create a high-quality financial dashboard.
+
+Top KPI cards:
+
+### Total Revenue
+
+Example:
+
+₹48,52,320
+
+Growth:
+
++12.8%
+
+### Successful Payments
+
+₹42,31,120
+
+### Failed Payments
+
+₹2,31,450
+
+### Refunds
+
+₹1,21,200
+
+### Available Balance
+
+₹8,42,120
+
+### Pending Settlement
+
+₹3,42,500
+
+---
+
+# 27. REVENUE CHART
+
+Large chart.
+
+Show:
+
+* Revenue
+* Payments
+* Refunds
+
+Filters:
+
+* 7D
+* 30D
+* 90D
+* 1Y
+
+Use Chart.js.
+
+Chart must respond to theme changes.
+
+---
+
+# 28. PAYMENT SUCCESS ANALYTICS
+
+Create:
+
+Donut chart:
+
+* Successful
+* Failed
+* Pending
+* Refunded
+
+Include percentage values.
+
+---
+
+# 29. RECENT TRANSACTIONS
+
+Create professional table.
+
+Columns:
+
+* Transaction ID
+* Customer
+* Amount
+* Payment Method
+* Status
+* Date
+* Actions
+
+Example:
+
+```text
+TXN-102938
+Rahul Sharma
+₹12,500
+UPI
+Successful
+02 Oct 2026
+View
+```
+
+Statuses:
+
+* Successful
+* Pending
+* Failed
+* Refunded
+* Disputed
+
+Use professional status badges.
+
+---
+
+# 30. TRANSACTIONS PAGE
+
+Features:
+
+* Search
+* Date filter
+* Amount filter
+* Payment method filter
+* Status filter
+* Export
+* Bulk actions
+
+Table with pagination.
+
+Add transaction detail drawer/modal.
+
+---
+
+# 31. TRANSACTION DETAIL
+
+Show:
+
+Transaction ID
+
+Amount
+
+Status
+
+Customer
+
+Payment method
+
+Created date
+
+Settlement date
+
+Risk score
+
+Timeline:
+
+```text
+Payment initiated
+Payment authorized
+Payment captured
+Settlement processing
+Settlement completed
+```
+
+Add:
+
+* refund
+* download receipt
+* view customer
+* dispute
+* copy transaction ID
+
+---
+
+# 32. PAYMENTS PAGE
+
+Create complete payment management.
+
+Sections:
+
+* All Payments
+* Successful
+* Pending
+* Failed
+* Refunded
+
+Charts:
+
+* payment volume
+* success rate
+* payment methods
+
+---
+
+# 33. CUSTOMERS PAGE
+
+Table:
+
+* Customer ID
+* Name
+* Email
+* Phone
+* Total Spent
+* Transactions
+* Last Payment
+* Status
+
+Actions:
+
+* View
+* Edit
+* Disable
+* Delete
+
+---
+
+# 34. CUSTOMER PROFILE
+
+Show:
+
+* Customer information
+* Total spending
+* Payment history
+* Refunds
+* Saved payment methods
+* Invoices
+* Subscriptions
+* Activity timeline
+
+---
+
+# 35. PAYMENT LINKS
+
+Create payment-link management.
+
+Dashboard cards:
+
+* Active Links
+* Total Payments
+* Revenue
+* Expired Links
+
+Table:
+
+* Link Name
+* Amount
+* Payments
+* Revenue
+* Expiry
+* Status
+* Actions
+
+CTA:
+
+"Create Payment Link"
+
+---
+
+# 36. CREATE PAYMENT LINK
+
+Form:
+
+* Link name
+* Amount
+* Currency
+* Customer
+* Description
+* Expiry
+* Maximum payments
+* Allow partial payment
+* Redirect URL
+
+Preview:
+
+Payment page preview.
+
+Generate:
+
+"Create Link"
+
+---
+
+# 37. INVOICES
+
+Create invoice dashboard.
+
+KPIs:
+
+* Total Invoices
+* Paid
+* Pending
+* Overdue
+* Revenue
+
+Table:
+
+* Invoice Number
+* Customer
+* Amount
+* Due Date
+* Status
+* Actions
+
+---
+
+# 38. CREATE INVOICE
+
+Fields:
+
+* Customer
+* Invoice number
+* Invoice date
+* Due date
+* Items
+* Quantity
+* Price
+* Tax
+* Discount
+* Notes
+
+Live invoice preview.
+
+Buttons:
+
+* Save Draft
+* Send Invoice
+* Download PDF
+
+---
+
+# 39. SUBSCRIPTIONS
+
+Create subscription management.
+
+Cards:
+
+* Active subscriptions
+* Monthly recurring revenue
+* Churn
+* Trial users
+
+Table:
+
+* Customer
+* Plan
+* Amount
+* Billing Cycle
+* Next Billing
+* Status
+
+---
+
+# 40. PAYOUTS
+
+Create payouts page.
+
+Cards:
+
+* Total Payouts
+* Completed
+* Pending
+* Failed
+
+Table:
+
+* Payout ID
+* Recipient
+* Amount
+* Method
+* Date
+* Status
+
+---
+
+# 41. SETTLEMENTS
+
+Create settlement management.
+
+Show:
+
+* Available Balance
+* Pending Settlement
+* Next Settlement
+* Settlement History
+
+Table:
+
+* Settlement ID
+* Amount
+* Bank Account
+* Initiated
+* Completed
+* Status
+
+---
+
+# 42. REFUNDS
+
+Create refund management.
+
+KPIs:
+
+* Refund Amount
+* Refund Count
+* Pending Refunds
+* Refund Rate
+
+Table:
+
+* Refund ID
+* Transaction
+* Customer
+* Amount
+* Reason
+* Status
+* Date
+
+---
+
+# 43. DISPUTES
+
+Create disputes management.
+
+Statuses:
+
+* Open
+* Under Review
+* Won
+* Lost
+
+Table:
+
+* Dispute ID
+* Transaction
+* Customer
+* Amount
+* Reason
+* Deadline
+* Status
+
+Detail page should show:
+
+* dispute information
+* evidence
+* timeline
+* communication
+* response deadline
+
+---
+
+# 44. PAYMENT METHODS
+
+Create settings page for:
+
+* Cards
+* UPI
+* Net Banking
+* Wallets
+* Bank Transfer
+* QR
+* International payments
+
+Each method should have:
+
+* enable/disable
+* configuration
+* status
+* transaction volume
+* success rate
+
+---
+
+# 45. ANALYTICS PAGE
+
+Create an advanced analytics dashboard.
+
+Charts:
+
+* Revenue
+* Transaction volume
+* Payment success rate
+* Refund rate
+* Customer growth
+* Average transaction value
+* Payment method distribution
+* Geographic distribution
+* Hourly transaction activity
+
+Filters:
+
+* Date
+* Currency
+* Payment method
+* Country
+* Customer segment
+
+---
+
+# 46. REPORTS
+
+Create reports center.
+
+Reports:
+
+* Transaction Report
+* Settlement Report
+* Refund Report
+* Payout Report
+* Customer Report
+* Revenue Report
+* Tax Report
+* Fraud Report
+
+Buttons:
+
+* View
+* Generate
+* Download CSV
+* Download PDF
+
+---
+
+# 47. RISK & FRAUD
+
+Create professional fraud dashboard.
+
+KPIs:
+
+* Risk Transactions
+* Blocked Payments
+* Review Required
+* Fraud Rate
+
+Risk levels:
+
+* Low
+* Medium
+* High
+* Critical
+
+Create risk monitoring table.
+
+Columns:
+
+* Transaction
+* Customer
+* Amount
+* Risk Score
+* Reason
+* Status
+* Action
+
+---
+
+# 48. DEVELOPERS PORTAL
+
+Create dedicated developer interface.
+
+Sidebar:
+
+```text
+Developer Overview
+API Keys
+Webhooks
+Events
+Logs
+Documentation
+SDKs
+Test Mode
+```
+
+---
+
+# 49. API KEYS
+
+Create:
+
+* Publishable key
+* Secret key
+* Test key
+* Production key
+
+Security:
+
+Secret keys should be hidden.
+
+Buttons:
+
+* Reveal
+* Copy
+* Rotate
+* Revoke
+
+Add confirmation modal before destructive actions.
+
+---
+
+# 50. WEBHOOKS
+
+Create webhook management.
+
+Show:
+
+* Endpoint
+* Events
+* Status
+* Last Delivery
+* Success Rate
+
+Create endpoint modal.
+
+Event examples:
+
+```text
+payment.created
+payment.succeeded
+payment.failed
+payment.refunded
+payout.completed
+invoice.paid
+subscription.created
+subscription.cancelled
+```
+
+---
+
+# 51. API LOGS
+
+Create API request logs.
+
+Columns:
+
+* Request ID
+* Endpoint
+* Method
+* Status
+* Response Time
+* Timestamp
+
+Filters:
+
+* endpoint
+* method
+* status
+* date
+
+---
+
+# 52. DOCUMENTATION
+
+Create documentation website.
+
+Sidebar:
+
+```text
+Introduction
+Quick Start
+Authentication
+Payments
+Customers
+Refunds
+Payouts
+Webhooks
+Errors
+Testing
+SDKs
+API Reference
+```
+
+Code blocks with:
+
+* copy button
+* language label
+* syntax-like formatting
+
+---
+
+# 53. TEAM MANAGEMENT
+
+Create team page.
+
+Roles:
+
+* Owner
+* Admin
+* Finance
+* Developer
+* Analyst
+* Support
+* Viewer
+
+Table:
+
+* Name
+* Email
+* Role
+* Last Active
+* Status
+
+Invite member modal.
+
+---
+
+# 54. SETTINGS
+
+Create complete settings architecture.
+
+Sections:
+
+### General
+
+* Business Name
+* Website
+* Industry
+* Timezone
+* Currency
+
+### Profile
+
+* Name
+* Email
+* Phone
+* Avatar
+
+### Security
+
+* Password
+* 2FA
+* Login sessions
+* Trusted devices
+
+### Notifications
+
+* Payment notifications
+* Refund notifications
+* Settlement notifications
+* Security notifications
+
+### Billing
+
+* Current plan
+* Payment method
+* Billing history
+
+### Appearance
+
+* Theme
+* Compact mode
+* Sidebar behavior
+
+---
+
+# 55. AUDIT LOGS
+
+Create enterprise audit page.
+
+Show:
+
+* User
+* Action
+* Resource
+* IP
+* Timestamp
+* Result
+
+Example:
+
+```text
+Admin changed payout settings
+Developer created API key
+Finance exported transaction report
+```
+
+---
+
+# 56. NOTIFICATION CENTER
+
+Create notification dropdown/page.
+
+Categories:
+
+* Payments
+* Security
+* Settlement
+* Team
+* System
+
+Support:
+
+* unread
+* read
+* mark all read
+
+---
+
+# 57. SUPPORT CENTER
+
+Create support page.
+
+Sections:
+
+* Search help
+* FAQs
+* Documentation
+* Contact support
+* Create ticket
+* Ticket history
+
+---
+
+# 58. ERROR / EMPTY / LOADING STATES
+
+Create professional states for every major component.
+
+Include:
+
+### Loading
+
+Skeleton loaders.
+
+### Empty
+
+Example:
+
+"No transactions found"
+
+### Error
+
+"Something went wrong"
+
+### Offline
+
+"You're currently offline"
+
+### Permission
+
+"You don't have permission to access this page"
+
+### 404
+
+"Page not found"
+
+Do not leave blank screens.
+
+---
+
+# 59. MODALS
+
+Create reusable Bootstrap modals for:
+
+* Delete
+* Refund
+* Create payment
+* Create invoice
+* Create payout
+* Invite member
+* Generate API key
+* Rotate API key
+* Disable payment method
+* Export report
+* Confirmation
+
+---
+
+# 60. TOAST SYSTEM
+
+Create reusable toast notifications.
+
+Examples:
+
+```text
+Payment successfully created
+Invoice sent successfully
+API key copied
+Refund initiated
+Settings updated
+Payment link created
+```
+
+Success, warning, error, info.
+
+---
+
+# 61. RESPONSIVE DESIGN
+
+The entire project must be fully responsive.
+
+Breakpoints:
+
+* Extra small
+* Small
+* Medium
+* Large
+* Extra large
+* XXL
+
+Desktop:
+
+* persistent sidebar
+* full dashboard
+
+Tablet:
+
+* collapsible sidebar
+
+Mobile:
+
+* offcanvas sidebar
+* mobile navbar
+* stacked cards
+* horizontally scrollable tables
+* responsive charts
+* full-width forms
+* mobile-friendly modals
+
+Never allow:
+
+* horizontal page overflow
+* broken tables
+* overlapping elements
+* text clipping
+* buttons going outside containers
+
+---
+
+# 62. MOBILE DASHBOARD
+
+Do not simply shrink the desktop UI.
+
+Create proper mobile behavior.
+
+Mobile dashboard:
+
+```text
+Header
+Balance Card
+Revenue
+Payments
+Quick Actions
+Revenue Chart
+Recent Transactions
+```
+
+Quick actions:
+
+* Payment
+* Refund
+* Invoice
+* Payout
+
+---
+
+# 63. ACCESSIBILITY
+
+Follow basic accessibility standards.
+
+Use:
+
+* semantic HTML
+* labels
+* aria attributes where required
+* keyboard navigation
+* visible focus states
+* sufficient contrast
+* alt text
+* accessible buttons
+* accessible dropdowns
+* accessible modals
+
+Do not use icons as the only indication for important actions.
+
+---
+
+# 64. ANIMATIONS
+
+Use AOS for scroll animations.
+
+Animations should be subtle.
+
+Examples:
+
+```text
+fade-up
+fade-right
+fade-left
+zoom-in
+```
+
+Use animation only where it improves UX.
+
+Dashboard interactions may use lightweight transitions.
+
+Avoid excessive animations.
+
+---
+
+# 65. MICRO INTERACTIONS
+
+Add professional micro interactions:
+
+* button hover
+* card hover
+* icon hover
+* dropdown transitions
+* sidebar transitions
+* tab transitions
+* toast animation
+* modal transitions
+* loading skeletons
+* copy-to-clipboard feedback
+
+---
+
+# 66. DARK MODE CHART SUPPORT
+
+Charts must automatically update when theme changes.
+
+For example:
+
+Light:
+
+* dark labels
+* light grid
+
+Dark:
+
+* light labels
+* dark grid
+
+Do not leave charts unreadable in dark mode.
+
+---
+
+# 67. DATA TABLE SYSTEM
+
+Tables must support:
+
+* sorting
+* searching
+* filtering
+* pagination
+* responsive behavior
+* status badges
+* row actions
+* checkbox selection
+* bulk actions
+
+On mobile, use horizontal scrolling or responsive card representation.
+
+---
+
+# 68. SEARCH SYSTEM
+
+Create global search.
+
+Search:
+
+* transactions
+* customers
+* invoices
+* payment links
+* payouts
+* documentation
+
+Show search results dropdown.
+
+Keyboard shortcut:
+
+```text
+Ctrl + K
+```
+
+Optional.
+
+---
+
+# 69. SIDEBAR BEHAVIOR
+
+Desktop:
+
+Expanded:
+
+```text
+icon + label
+```
+
+Collapsed:
+
+```text
+icon only
+```
+
+Mobile:
+
+Bootstrap Offcanvas.
+
+Sidebar should remember collapsed state using LocalStorage.
+
+---
+
+# 70. THEME SWITCHER UI
+
+Create a professional theme selector.
+
+Options:
+
+```text
+Light
+Dark
+Midnight
+High Contrast
+```
+
+Add visual previews.
+
+When selected:
+
+* update CSS variables
+* update body class/data-theme
+* update charts
+* update localStorage
+
+---
+
+# 71. DEMO DATA
+
+Use realistic fictional data.
+
+Do not use meaningless:
+
+```text
+Lorem ipsum
+123456
+Test User
+ABC
+```
+
+Instead use realistic names:
+
+* Aarav Mehta
+* Neha Sharma
+* Rahul Verma
+* Priya Patel
+* Arjun Shah
+
+Transaction IDs:
+
+```text
+TXN-20261003-0012
+TXN-20261003-0013
+```
+
+Amounts should look realistic.
+
+Use INR as primary currency.
+
+Optionally support:
+
+* INR
+* USD
+* EUR
+* GBP
+
+---
+
+# 72. CURRENCY UI
+
+Create currency selector.
+
+Example:
+
+```text
+₹ INR
+$ USD
+€ EUR
+£ GBP
+```
+
+Dashboard should update displayed currency formatting in demo mode.
+
+---
+
+# 73. DATE RANGE SELECTOR
+
+Create reusable date selector:
+
+```text
+Today
+Yesterday
+Last 7 Days
+Last 30 Days
+This Month
+Last Month
+Custom Range
+```
+
+---
+
+# 74. EXPORT FUNCTIONALITY
+
+Create demo export functionality.
+
+Buttons:
+
+* Export CSV
+* Download Report
+* Download Invoice
+
+Use JavaScript to generate CSV where practical.
+
+---
+
+# 75. COPY TO CLIPBOARD
+
+Implement clipboard support.
+
+Example:
+
+API key:
+
+```text
+sk_test_****************
+```
+
+Click:
+
+Copy
+
+Then show:
+
+"Copied to clipboard"
+
+---
+
+# 76. FORM VALIDATION
+
+All forms should have validation.
+
+Examples:
+
+* required fields
+* valid email
+* valid phone
+* positive amount
+* password rules
+* date validation
+
+Show validation messages professionally.
+
+---
+
+# 77. SECURITY UX
+
+For sensitive actions:
+
+Require confirmation.
+
+Example:
+
+Deleting API key:
+
+```text
+Are you sure?
+
+This action cannot be undone.
+```
+
+Buttons:
+
+Cancel
+
+Confirm Delete
+
+---
+
+# 78. PRODUCTION-LIKE UI STATES
+
+Every important component must have:
+
+1. Default state
+2. Hover state
+3. Active state
+4. Focus state
+5. Disabled state
+6. Loading state
+7. Error state
+8. Empty state
+9. Success state
+
+---
+
+# 79. FOOTER
+
+Public website footer:
+
+Columns:
+
+### Product
+
+* Payments
+* Payouts
+* Invoices
+* Subscriptions
+* Payment Links
+
+### Solutions
+
+* Startups
+* Ecommerce
+* Enterprise
+* SaaS
+
+### Developers
+
+* Documentation
+* API Reference
+* SDKs
+* Webhooks
+
+### Company
+
+* About
+* Careers
+* Contact
+* Security
+
+### Legal
+
+* Privacy
+* Terms
+* Cookies
+
+Bottom:
+
+Copyright
+
+Social icons
+
+Status:
+
+"All Systems Operational"
+
+---
+
+# 80. PROJECT STRUCTURE
+
+Create a clean folder structure.
+
+Example:
+
+```text
+fintech-payments/
+│
+├── index.html
+│
+├── pages/
+│   ├── about.html
+│   ├── products.html
+│   ├── payments.html
+│   ├── payouts.html
+│   ├── pricing.html
+│   ├── developers.html
+│   ├── contact.html
+│   ├── security.html
+│   ├── login.html
+│   ├── signup.html
+│   ├── forgot-password.html
+│   ├── otp.html
+│   │
+│   └── dashboard/
+│       ├── index.html
+│       ├── transactions.html
+│       ├── payments.html
+│       ├── customers.html
+│       ├── payment-links.html
+│       ├── invoices.html
+│       ├── subscriptions.html
+│       ├── payouts.html
+│       ├── settlements.html
+│       ├── refunds.html
+│       ├── disputes.html
+│       ├── analytics.html
+│       ├── reports.html
+│       ├── fraud.html
+│       ├── developers.html
+│       ├── api-keys.html
+│       ├── webhooks.html
+│       ├── api-logs.html
+│       ├── team.html
+│       ├── audit-logs.html
+│       ├── notifications.html
+│       ├── support.html
+│       └── settings.html
+│
+├── assets/
+│   ├── css/
+│   │   ├── style.css
+│   │   ├── dashboard.css
+│   │   ├── responsive.css
+│   │   └── themes.css
+│   │
+│   ├── js/
+│   │   ├── main.js
+│   │   ├── dashboard.js
+│   │   ├── theme.js
+│   │   ├── charts.js
+│   │   ├── tables.js
+│   │   ├── forms.js
+│   │   └── utils.js
+│   │
+│   ├── images/
+│   └── icons/
+│
+└── README.md
+```
+
+You may improve this structure if necessary.
+
+---
+
+# 81. REUSABLE COMPONENT APPROACH
+
+Even though this is a vanilla HTML/CSS/JS project, create reusable patterns.
+
+Examples:
+
+```text
+navbar
+footer
+sidebar
+dashboard-header
+stat-card
+chart-card
+data-table
+status-badge
+modal
+toast
+dropdown
+pagination
+filter-bar
+empty-state
+loading-state
+```
+
+Avoid writing completely unrelated styles for every page.
+
+---
+
+# 82. JAVASCRIPT ARCHITECTURE
+
+Keep JavaScript modular and readable.
+
+Create reusable functions such as:
+
+```javascript
+setTheme();
+getTheme();
+showToast();
+copyToClipboard();
+formatCurrency();
+formatDate();
+openModal();
+closeModal();
+initializeCharts();
+initializeTables();
+initializeTooltips();
+initializeAOS();
+```
+
+Avoid unnecessary complex architecture.
+
+Code should be understandable by a junior/fresher developer.
+
+---
+
+# 83. BOOTSTRAP USAGE
+
+Use Bootstrap heavily.
+
+Use:
+
+* container
+* container-fluid
+* row
+* col
+* flex
+* gap
+* spacing
+* buttons
+* cards
+* nav
+* tabs
+* accordion
+* dropdown
+* modal
+* offcanvas
+* toast
+* alert
+* badge
+* progress
+* pagination
+* forms
+
+Do not reinvent Bootstrap components without a reason.
+
+---
+
+# 84. ICON SYSTEM
+
+Use Bootstrap Icons.
+
+Icons should communicate meaning.
+
+Examples:
+
+* dashboard
+* wallet
+* credit card
+* users
+* receipt
+* chart
+* settings
+* security
+* code
+* bell
+* search
+* filter
+* download
+* arrow-up
+* arrow-down
+
+Do not use random emoji as UI icons.
+
+---
+
+# 85. CHARTS
+
+Use Chart.js.
+
+Required chart types:
+
+### Line Chart
+
+Revenue over time.
+
+### Bar Chart
+
+Payment volume.
+
+### Doughnut
+
+Payment status.
+
+### Horizontal Bar
+
+Payment method performance.
+
+### Area-style chart
+
+Balance/revenue trends.
+
+Charts must:
+
+* be responsive
+* have proper labels
+* update with theme
+* have realistic data
+* have tooltips
+* have legends where appropriate
+
+---
+
+# 86. FINTECH VISUAL DETAILS
+
+Use subtle financial UI elements:
+
+* balance indicators
+* trend arrows
+* percentage changes
+* transaction status
+* payment method logos/icons
+* mini sparkline charts
+* account balance
+* settlement indicators
+* risk indicators
+* revenue trends
+* transaction timelines
+
+Make these elements useful rather than decorative.
+
+---
+
+# 87. DASHBOARD QUICK ACTIONS
+
+Create:
+
+```text
+Accept Payment
+Create Payment Link
+Create Invoice
+Send Payout
+Issue Refund
+Export Report
+```
+
+Use compact action cards/buttons.
+
+---
+
+# 88. DASHBOARD PERSONALIZATION
+
+Include:
+
+* theme
+* compact mode
+* sidebar collapse
+* date range
+* currency
+* notification preferences
+
+Persist appropriate preferences using LocalStorage.
+
+---
+
+# 89. NOTIFICATION DROPDOWN
+
+Example:
+
+```text
+Payment received
+₹25,000 payment received from Rahul Sharma
+
+Settlement completed
+₹1,25,000 has been settled
+
+Security alert
+New API key generated
+```
+
+Unread indicator.
+
+---
+
+# 90. PROFILE MENU
+
+Profile:
+
+```text
+Ketan Mali
+Admin
+```
+
+Menu:
+
+* My Profile
+* Organization
+* Security
+* Preferences
+* Logout
+
+Use generic/demo user data if needed.
+
+---
+
+# 91. PUBLIC WEBSITE ANIMATIONS
+
+Use AOS.
+
+Example:
+
+```html
+data-aos="fade-up"
+```
+
+But do not animate every element.
+
+Hero can have subtle entrance animations.
+
+Feature sections can animate on scroll.
+
+---
+
+# 92. PERFORMANCE
+
+The project must be optimized.
+
+Avoid:
+
+* unnecessarily huge images
+* excessive JavaScript
+* duplicate CSS
+* unused libraries
+* excessive animation
+* blocking scripts
+
+Use:
+
+* lazy loading
+* optimized assets
+* defer scripts where appropriate
+* reusable CSS
+* efficient DOM manipulation
+
+---
+
+# 93. SEO
+
+Public pages should include:
+
+* title
+* meta description
+* viewport
+* Open Graph basics
+* semantic headings
+* descriptive alt text
+
+Example:
+
+```html
+<title>FinTech Payments Platform | Modern Payment Infrastructure</title>
+```
+
+---
+
+# 94. BROWSER COMPATIBILITY
+
+Make the UI work correctly in modern:
+
+* Chrome
+* Edge
+* Firefox
+* Safari
+
+---
+
+# 95. QUALITY CONTROL
+
+Before considering the project complete, inspect every page.
+
+Check:
+
+### Desktop
+
+* 1920px
+* 1440px
+* 1280px
+
+### Laptop
+
+* 1024px
+
+### Tablet
+
+* 768px
+
+### Mobile
+
+* 576px
+* 430px
+* 390px
+* 375px
+* 320px
+
+Check:
+
+* spacing
+* typography
+* tables
+* charts
+* sidebar
+* navbar
+* modals
+* forms
+* buttons
+* images
+* overflow
+* theme switching
+
+---
+
+# 96. LINKING
+
+All pages must be properly connected.
+
+Example:
+
+Navbar:
+
+```text
+Products → products.html
+Pricing → pricing.html
+Developers → developers.html
+Login → login.html
+```
+
+Dashboard:
+
+```text
+Overview → index.html
+Transactions → transactions.html
+Customers → customers.html
+Payments → payments.html
+...
+```
+
+Do not leave fake:
+
+```html
+href="#"
+```
+
+for actual internal navigation.
+
+Use proper relative paths.
+
+---
+
+# 97. NO BROKEN UI
+
+Do not deliver:
+
+* broken images
+* broken links
+* empty buttons
+* overlapping cards
+* unusable mobile UI
+* unreadable dark mode
+* inconsistent colors
+* missing icons
+* placeholder sections
+* lorem ipsum
+* unfinished pages
+
+---
+
+# 98. REALISTIC CONTENT
+
+All UI copy should be professional.
+
+Avoid generic AI phrases such as:
+
+"Revolutionize your business with our amazing solution."
+
+Use realistic FinTech SaaS copy.
+
+Example:
+
+"Accept payments, manage transactions, automate payouts, and monitor your financial performance from one platform."
+
+---
+
+# 99. PROFESSIONAL DASHBOARD FEEL
+
+The dashboard should resemble a real financial operations product.
+
+Prioritize:
+
+* information hierarchy
+* clear KPIs
+* data density
+* scanning
+* filters
+* tables
+* charts
+* actionable information
+
+Do not make the dashboard look like a landing page.
+
+---
+
+# 100. DESIGN CONSISTENCY
+
+Every page must feel like part of the same product.
+
+Maintain consistent:
+
+* navbar
+* sidebar
+* typography
+* colors
+* buttons
+* cards
+* inputs
+* badges
+* shadows
+* radius
+* spacing
+* icons
+* animations
+* theme system
+
+---
+
+# 101. IMPORTANT IMPLEMENTATION RULE
+
+Before writing code:
+
+1. Analyze the entire requirement.
+2. Plan the complete information architecture.
+3. Plan all pages.
+4. Plan the design system.
+5. Plan reusable components.
+6. Plan theme architecture.
+7. Plan responsive behavior.
+8. Plan JavaScript functionality.
+9. Plan chart/data architecture.
+10. Then start implementation.
+
+Do not immediately create random HTML pages.
+
+---
+
+# 102. BUILD ORDER
+
+Follow this order:
+
+### Phase 1
+
+Design system.
+
+### Phase 2
+
+Global CSS variables.
+
+### Phase 3
+
+Public navbar/footer.
+
+### Phase 4
+
+Homepage.
+
+### Phase 5
+
+Public website pages.
+
+### Phase 6
+
+Authentication.
+
+### Phase 7
+
+Dashboard shell.
+
+### Phase 8
+
+Dashboard overview.
+
+### Phase 9
+
+Transactions/payments/customers.
+
+### Phase 10
+
+Invoices/payment links/subscriptions.
+
+### Phase 11
+
+Payouts/settlements/refunds/disputes.
+
+### Phase 12
+
+Analytics/reports/fraud.
+
+### Phase 13
+
+Developer portal.
+
+### Phase 14
+
+Team/settings/security.
+
+### Phase 15
+
+Theme system.
+
+### Phase 16
+
+Responsive optimization.
+
+### Phase 17
+
+Accessibility.
+
+### Phase 18
+
+Final QA.
+
+---
+
+# 103. CODE QUALITY
+
+Write clean code.
+
+HTML:
+
+* semantic
+* readable
+* properly indented
+
+CSS:
+
+* organized
+* variables
+* reusable classes
+* comments where useful
+
+JavaScript:
+
+* simple functions
+* meaningful names
+* comments
+* avoid unnecessary complexity
+
+Do not generate minified code during development.
+
+---
+
+# 104. COMMENTS
+
+Add useful comments.
+
+Example:
+
+```javascript
+// Change the dashboard theme and save the selected theme
+function setTheme(themeName) {
+    document.documentElement.setAttribute("data-theme", themeName);
+    localStorage.setItem("fintech-theme", themeName);
+}
+```
+
+Comments should explain meaningful logic.
+
+Do not comment every single HTML line.
+
+---
+
+# 105. FINAL EXPERIENCE
+
+When completed, the user should feel that they are using an actual commercial FinTech product.
+
+The experience should communicate:
+
+**"This is a serious payment infrastructure and financial operations platform."**
+
+Not:
+
+**"This is a simple HTML dashboard template."**
+
+---
+
+# 106. FINAL DELIVERY REQUIREMENTS
+
+Deliver the complete project with:
+
+* all pages
+* all HTML
+* all CSS
+* all JavaScript
+* all responsive styles
+* all themes
+* all dashboard pages
+* all public pages
+* authentication pages
+* charts
+* tables
+* modals
+* dropdowns
+* notifications
+* forms
+* validation
+* animations
+* realistic demo data
+* navigation
+* footer
+* sidebar
+* theme persistence
+* mobile behavior
+
+Make sure the project is actually usable.
+
+---
+
+# 107. FINAL QA CHECKLIST
+
+Before finishing, verify:
+
+[ ] Homepage works
+[ ] Navbar works
+[ ] Footer works
+[ ] All public pages work
+[ ] Login works
+[ ] Signup works
+[ ] Forgot password works
+[ ] OTP page works
+[ ] Dashboard works
+[ ] Sidebar works
+[ ] Sidebar collapse works
+[ ] Mobile sidebar works
+[ ] Theme switching works
+[ ] Theme persists after reload
+[ ] Dark mode works
+[ ] Charts work
+[ ] Tables work
+[ ] Search works
+[ ] Filters work
+[ ] Pagination works
+[ ] Modals work
+[ ] Toasts work
+[ ] Forms validate
+[ ] Copy buttons work
+[ ] Export works where implemented
+[ ] Internal links work
+[ ] No horizontal overflow
+[ ] Mobile UI works
+[ ] Tablet UI works
+[ ] Desktop UI works
+[ ] Accessibility basics implemented
+[ ] SEO basics implemented
+[ ] No placeholder content
+[ ] No broken images
+[ ] No broken links
+[ ] No unfinished sections
+[ ] No console errors
+
+---
+
+# 108. MOST IMPORTANT DESIGN INSTRUCTION
+
+Do not focus only on creating many pages.
+
+**Quality is more important than quantity.**
+
+Every page must have:
+
+* proper hierarchy
+* useful content
+* realistic data
+* professional spacing
+* strong visual balance
+* responsive layout
+* proper interaction
+* consistent components
+* meaningful empty/loading/error states
+
+The final product must look like a **professionally designed, production-inspired FinTech Payments SaaS platform created by an experienced UI/UX and frontend development team.**
+
+Build it from **basic foundation → advanced functionality**, while keeping the source code understandable, organized, reusable, responsive, and maintainable.
+
+## FINAL COMMAND
+
+Now analyze the complete requirements above and build the **FinTech Payments Platform** from scratch.
+
+Do not skip important pages.
+
+Do not create placeholder pages just to satisfy the page count.
+
+Do not stop after creating the homepage.
+
+Do not stop after creating the dashboard.
+
+Build the **complete website + complete dashboard ecosystem + authentication + payment management + financial operations + developer portal + settings + multi-theme system**.
+
+Prioritize **professional production-level UI/UX, consistency, responsiveness, realistic financial data, accessibility, and usability** throughout the entire project.
