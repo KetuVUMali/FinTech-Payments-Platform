@@ -32,11 +32,22 @@ const THEMES = ['dark', 'light', 'midnight', 'contrast'];
 const THEME_LABELS = { dark: 'Dark Obsidian', light: 'Light Crystal', midnight: 'Midnight Sapphire', contrast: 'High Contrast' };
 const THEME_COLORS = { dark: '#3b82f6', light: '#2563eb', midnight: '#6366f1', contrast: '#ffd400' };
 
+// Ensure Dark theme is set first by default
+if (localStorage.getItem('fintech-theme-default-dark') !== '1') {
+  localStorage.setItem('fintech-theme', 'dark');
+  localStorage.setItem('fintech-theme-default-dark', '1');
+}
+
+function getTheme() {
+  return localStorage.getItem('fintech-theme') || 'dark';
+}
+
 function setTheme(t) {
   if (!THEMES.includes(t)) t = 'dark';
   document.documentElement.dataset.theme = t;
   document.documentElement.dataset.bsTheme = t === 'light' ? 'light' : 'dark';
   localStorage.setItem('fintech-theme', t);
+  localStorage.setItem('fintech-theme-default-dark', '1');
   document.dispatchEvent(new Event('themechange'));
 }
 
@@ -1356,7 +1367,7 @@ Promise.all([
   window.libsReady,
   new Promise(r => document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', r) : r())
 ]).then(() => {
-  setTheme(localStorage.getItem('fintech-theme') || 'dark');
+  setTheme(getTheme());
   const l = document.body.dataset.layout;
   if (l === 'public') publicLayout();
   else if (l === 'dash') dashLayout();

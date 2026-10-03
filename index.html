@@ -26,6 +26,10 @@
   <!-- Instant Theme Persistence to prevent FOUC (Default: Dark Obsidian) -->
   <script>
     (function () {
+      if (localStorage.getItem('fintech-theme-default-dark') !== '1') {
+        localStorage.setItem('fintech-theme', 'dark');
+        localStorage.setItem('fintech-theme-default-dark', '1');
+      }
       var t = localStorage.getItem('fintech-theme') || 'dark';
       document.documentElement.dataset.theme = t;
       document.documentElement.dataset.bsTheme = (t === 'light') ? 'light' : 'dark';
